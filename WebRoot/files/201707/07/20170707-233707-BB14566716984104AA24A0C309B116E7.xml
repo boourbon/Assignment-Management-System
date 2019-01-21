@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restful>
+	<!-- example:
+	<api name="hello" class="my.HelloApi" /> 
+	-->
+
+	<!-- JSONP 测试  -->
+	<api name="JsonpTest1" class="af.jsonp.JsonpTest1Api" /> 
+	
+</restful>

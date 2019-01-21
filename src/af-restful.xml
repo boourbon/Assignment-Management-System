@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restful>
+	<!-- example:
+	<api name="hello" class="my.HelloApi" /> 
+	-->
+
+	<api name="CourseList" class="my.course.CourseListApi" /> 
+
+	<api name="TeacherLogin" class="my.teacher.TeacherLoginApi" /> 
+	 
+	<api name="AssignmentSave" class="my.assignment.AssignmentSaveApi" /> 
+	<api name="AssignmentList" class="my.assignment.AssignmentListApi" /> 
+	
+	<api name="ExerciseList" class="my.exercise.ExerciseListApi" /> 
+	<api name="ExerciseSetScore" class="my.exercise.ExerciseSetScoreApi" /> 
+	
+	<api name="StudentLogin" class="my.student.StudentLoginApi" />
+	
+</restful>

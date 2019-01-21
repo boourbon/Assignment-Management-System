@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <!-- beans 支持 -->
+  <filter>
+	<filter-name>BeanFactory</filter-name>
+	<filter-class>my.BeanFactory</filter-class>
+  </filter>
+   
+    <!-- af-restful 支持 -->
+	<filter>
+		<filter-name>AfRestfulFilter</filter-name>
+		<filter-class>af.restful.AfRestfulFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AfRestfulFilter</filter-name>
+		<url-pattern>*.api</url-pattern>
+	</filter-mapping>  
+
+	<!--  通用文件上传支持 -->
+	<servlet>
+	    <servlet-name>CommonFileUpload</servlet-name>
+	    <servlet-class>af.fileupload.CommonFileUpload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>CommonFileUpload</servlet-name>
+	    <url-pattern>/CommonFileUpload</url-pattern>
+	</servlet-mapping>	
+	  	
+</web-app>
